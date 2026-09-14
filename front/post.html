@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <title>Instaclone</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-xl-flex">
+        <a class="navbar-brand" href="#"> <img src="/images/logo-small.png" alt=""> </a>
+        <form class="form-inline my-2 my-lg-0 ">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home.html"><i class="fas fa-home fa-lg"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/explore.html"><i class="far fa-compass fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#" data-toggle="notification-popover" title="Notifications"
+                        data-trigger="focus" data-content="Someone liked your photo" data-placement="bottom"><i
+                            class="far fa-heart fa-lg"></i></a>
+                </li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile.html"><img src="/images/avatar.jpg" alt="..."
+                            class="rounded-circle avatar"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Navbar navbar mobile -->
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-bottom d-lg-none">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav m-auto navbar-mobile">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home.html"><i class="fas fa-home fa-2x"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/explore.html"><i class="fas fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-camera fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-heart fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile.html"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar mobile end -->
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="card-img-top" src="/content/1.jpg" alt="Card image cap">
+            </div>
+            <div class="col-md-6">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                            <li class="nav-link">
+                                <a href="#"><img src="/images/avatar.jpg" alt="..." class="rounded-circle avatar"> </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href=""><strong> username</strong></a>
+                            </li>
+                            <li class="nav-link ml-auto">
+                                <a href="#" data-toggle="modal" data-target="#post-modal"><i
+                                        class="fas fa-ellipsis-v"></i></a>
+                            </li>
+                    </div>
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="media-left">
+                              <img class="media-avatar mr-3 rounded-circle" src="/images/avatar.jpg" class="media-object" style="width:45px">
+                            </div>
+                            <div class="media-body">
+                              <p class="media-heading"><a href="/profile.html"><strong>username</strong></a> <i class="far fa-heart float-right"></i> </p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p><small>15h</small> <small><strong>10 likes</strong></small>       </p>
+                             </div>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <img class="media-avatar mr-3 rounded-circle" src="/images/avatar.jpg" class="media-object" style="width:45px">
+                            </div>
+                            <div class="media-body">
+                              <p class="media-heading"><a href="/profile.html"><strong>username</strong></a>  <i class="far fa-heart float-right"></i> </p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p><small>15h</small> <small><strong>10 likes</strong></small>       </p>
+                             </div>
+                          </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="mr-2"> <i class="far fa-heart fa-lg"></i></a>
+                        <a href="#" class="mr-2"> <i class="far fa-comment fa-lg"></i></i></a>
+                        <a href="#" class="mr-2"> <i class="far fa-paper-plane fa-lg"></i></i></a>
+                        <a href="#" class="float-right"> <i class="far fa-bookmark fa-lg"></i></a>
+                        <p class="mt-2"><strong>120 likes</strong></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Add a comment..." aria-label="Post"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card end -->
+                 <!-- Modal -->
+                 <div class="modal animated fadeInDown" id="post-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                         <div class="modal-body">
+                             <p class="text-center"><a href="#" class="text-danger">Report Inappropriate</a></p>
+                             <hr>
+                             <p class="text-center"><a href="#" class="text-danger">Unfollow</a></p>
+                             <hr>
+                             <p class="text-center"><a href="#" >Go to post</a></p>
+                             <hr>
+                             <p class="text-center"><a href="#" >Share</a></p>
+                             <hr>
+                             <p class="text-center"><a href="#" >Copy Link</a></p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- Modal end -->
+            </div>
+            <!-- Main wrapper end -->
+        </div>
+    </div>
+
+    <!-- Content end -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
